@@ -1,0 +1,6 @@
+-- Haskell Playground 1.0
+square 2
+
+showResult 123
+
+showAreaOfCircle 12.3
