@@ -31,3 +31,14 @@ origin = (0, 0)
 
 moveUp :: Point -> Int -> Point
 moveUp (x, y) distance = (x, y-distance)
+
+-- List
+
+list1 :: [Int]
+list1 = [1,2,3,4,5]
+
+list2 :: [Int]
+list2 = [1..5]
+
+list3 :: [Int]
+list3 = [1,3..16] -- odd numbers up to 16
