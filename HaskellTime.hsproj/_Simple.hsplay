@@ -1,3 +1,2 @@
 -- Haskell Playground 1.0
-inc 6
-showAreaOfCircle 3
+Simple.max 1 2
