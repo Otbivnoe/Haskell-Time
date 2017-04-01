@@ -1,2 +1,3 @@
 -- Haskell Playground 1.0
 Simple.max 1 2
+Simple.signum (-2)
