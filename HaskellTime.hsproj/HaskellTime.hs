@@ -1,3 +1,7 @@
+import Prelude hiding (length)
+
+-- Basic
+
 inc :: Int -> Int
 inc x = x + 1
 
@@ -60,3 +64,15 @@ head' (x:_) = x
 allSquares :: (Num a) => [a] -> [a]
 allSquares [] = []
 allSquares (x:xs) = x*x : allSquares xs
+
+(+++) :: [a] -> [a] -> [a]
+[] +++ ys = ys
+(x:xs) +++ ys = x : (xs +++ ys)
+
+-- Exercises
+
+length :: [a] -> Int
+length [] = 0
+length (_:xs) = 1 + length xs
+ 
+

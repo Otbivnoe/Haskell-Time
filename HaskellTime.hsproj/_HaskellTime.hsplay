@@ -15,3 +15,17 @@ tail' "Hello"
 head' "Hello"
 
 allSquares [1,2,3,4,5]
+
+[1,2,3] +++ [4,5,6]
+
+-- Exercises
+
+length "123"
+1:[2,3,4]
+1:2:3:4:[]
+-- [1,2,3]:[4..7] -- need `++`
+-- 1:['a','b'] -- can't concat number with chars
+"abc"++"cd"
+-- "a":"bCc" -- need `++`
+-- 'a':'b' -- `:` should be applied to the list only
+'a':"b"
