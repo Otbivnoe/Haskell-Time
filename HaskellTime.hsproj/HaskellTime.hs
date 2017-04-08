@@ -1,4 +1,5 @@
 import Prelude hiding (length)
+import Prelude hiding (enumFromTo)
 
 -- Basic
 
@@ -71,8 +72,31 @@ allSquares (x:xs) = x*x : allSquares xs
 
 -- Exercises
 
-length :: [a] -> Int
-length [] = 0
-length (_:xs) = 1 + length xs
- 
+length' :: [a] -> Int
+length' [] = 0
+length' (_:xs) = 1 + length xs
+
+fact :: Int -> Int
+fact 1 = 1
+fact n = n * fact (n-1)
+
+enumFromTo' :: Int -> Int -> [Int]
+enumFromTo' n m 
+  | n <= m     = n : enumFromTo' (n+1) m
+  | otherwise  = [] 
+  
+countOdds :: [Int] -> Int
+countOdds [] = 0
+countOdds (x:xs) 
+  | odd x      = 1 + count
+  | otherwise  = 0 + count
+  where 
+    count = countOdds xs
+  
+removeOdd :: [Int] -> [Int]
+removeOdd [] = []
+removeOdd (x:xs)
+  | odd x     = [] ++ removeOdd xs 
+  | otherwise = x : removeOdd xs
+
 

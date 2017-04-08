@@ -20,7 +20,7 @@ allSquares [1,2,3,4,5]
 
 -- Exercises
 
-length "123"
+length' "123"
 1:[2,3,4]
 1:2:3:4:[]
 -- [1,2,3]:[4..7] -- need `++`
@@ -29,3 +29,8 @@ length "123"
 -- "a":"bCc" -- need `++`
 -- 'a':'b' -- `:` should be applied to the list only
 'a':"b"
+
+fact 4
+enumFromTo' 1 5
+countOdds [1,2,3,4,5]
+removeOdd [1,2,3,4,5]
