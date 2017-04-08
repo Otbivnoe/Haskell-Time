@@ -8,3 +8,10 @@ head "Head"
 tail "Head"
 
 error "Prelude.head: empty list"
+
+natSum (-3)
+
+tail' "Hello"
+head' "Hello"
+
+allSquares [1,2,3,4,5]

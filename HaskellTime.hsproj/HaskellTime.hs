@@ -10,8 +10,6 @@ showResult x = "The result is " ++ (show x)
 showAreaOfCircle :: (Floating a, Show a) => a -> String
 showAreaOfCircle r = "The area of a circle with radius " ++ show r ++ " is about " ++ (show $ pi * (r*r)) ++ "cm^2"
 
-
-
 -- Binders
 
 pi' :: Floating a => a
@@ -42,3 +40,23 @@ list2 = [1..5]
 
 list3 :: [Int]
 list3 = [1,3..16] -- odd numbers up to 16
+
+-- Recursion
+
+natSum :: Int -> Int
+natSum 0 = 0
+natSum n 
+  | n > 0 = n + natSum (n-1)
+  | otherwise = error "Input value can't be nagative"
+  
+-- List
+
+tail' :: [a] -> [a]
+tail' (_:xs) = xs
+
+head' :: [a] -> a
+head' (x:_) = x
+
+allSquares :: (Num a) => [a] -> [a]
+allSquares [] = []
+allSquares (x:xs) = x*x : allSquares xs
