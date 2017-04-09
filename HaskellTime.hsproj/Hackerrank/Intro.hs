@@ -1,6 +1,26 @@
 module Hackerrank.Intro
 where
   
+-- https://www.hackerrank.com/challenges/fp-list-replication
+
+f2 :: Int -> [Int] -> [Int]
+f2 _ [] = [] 
+f2 n (x:xs) = (f2' n x) ++ (f2 n xs)
+
+f2' :: Int -> Int -> [Int] 
+f2' 1 m = [m]
+f2' n m = m : f2' (n-1) m
+
+-- https://www.hackerrank.com/challenges/fp-filter-array
+
+f0 :: Int -> [Int] -> [Int]
+f0 _ [] = []
+f0 n (x:xs) 
+  | n > x     = x : next
+  | otherwise = next
+  where 
+    next = f0 n xs
+
 -- https://www.hackerrank.com/challenges/fp-filter-positions-in-a-list
 
 f1 :: [Int] -> [Int]
