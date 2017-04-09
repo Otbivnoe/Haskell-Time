@@ -13,4 +13,5 @@ Executable HaskellTime
       base -any
   other-modules:
       Simple
+      Hackerrank.Intro
       Hackerrank.Recursion
