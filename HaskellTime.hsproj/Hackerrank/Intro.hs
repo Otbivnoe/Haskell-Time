@@ -54,3 +54,33 @@ f3 (x:xs)
   | otherwise = 0 + count
   where count = f3 xs
   
+
+-- https://www.hackerrank.com/challenges/fp-update-list
+
+f4 :: (Num a, Ord a) => [a] -> [a]
+f4 [] = []
+f4 (x:xs)
+  | x < 0     = (-1*x):next
+  | otherwise = x:next 
+  where next = f4 xs
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
