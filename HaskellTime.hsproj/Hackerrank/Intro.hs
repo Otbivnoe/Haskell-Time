@@ -65,6 +65,10 @@ f4 (x:xs)
   where next = f4 xs
   
 
+-- https://www.hackerrank.com/challenges/eval-ex
+
+
+
 
 
 
