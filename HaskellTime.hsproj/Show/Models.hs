@@ -8,5 +8,9 @@ data Client = GovOrg String
  | Individual Person Bool
  deriving Show
  
-data Person = Person String String
+
+data Gender = Male | Female | Unknow
+  deriving Show
+
+data Person = Person String String Gender
   deriving Show
