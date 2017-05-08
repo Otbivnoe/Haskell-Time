@@ -12,7 +12,8 @@ Executable HaskellTime
   build-depends:
       base -any
   other-modules:
+      Shop.Helpers
+      Shop.Models
       Simple
-      Show.Models
       Hackerrank.Intro
       Hackerrank.Recursion
